@@ -1,0 +1,27 @@
+services:
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+        - "27017:27017"
+    environment:
+        MONGO_INITDB_ROOT_USERNAME: sharurl
+        MONGO_INITDB_ROOT_PASSWORD: 12345
+        MONGO_INITDB_ROOT_DATABASE: sharurldb
+
+  api:
+    image: backend-asp  
+    build:
+      context: .
+      dockerfile: Dockerfile 
+    ports:
+        - "5130:5130" 
+    environment:
+        DB_HOST: mongo
+        DB_PORT: 27017
+        DB_USER: sharurl
+        DB_PASSWORD: 12345
+        DB_NAME: sharurldb
+        ASPNETCORE_HTTP_PORTS: 5130
+    depends_on:
+      - mongo
