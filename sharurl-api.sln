@@ -5,7 +5,7 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sharurl-api", "sharurl-api\sharurl-api.csproj", "{CE8BC3C0-1EF5-4EF3-88F0-21414766B7DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlGeneratorTest", "UrlGeneratorTest\UrlGeneratorTest.csproj", "{F340049B-37E3-4EBB-B2C8-DE2AB66D39E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrlGeneratorTest", "UrlGeneratorTest\UrlGeneratorTest.csproj", "{F340049B-37E3-4EBB-B2C8-DE2AB66D39E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
